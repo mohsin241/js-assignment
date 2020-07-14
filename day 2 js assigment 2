@@ -1,0 +1,10 @@
+<html>
+ <head>
+  <h2>js assigment 2</h2>
+  <body>
+      <p>printing my current window</p>   
+     <button onclick="window.print()">Print this page</button>
+     
+  </body>
+ </head>
+</html>
