@@ -1,0 +1,10 @@
+<html>
+ <head>
+  <h2>js assigment 1</h2>
+  <body>
+    <script>
+      document.write(Date());
+     </script>   
+  </body>
+ </head>
+</html>
