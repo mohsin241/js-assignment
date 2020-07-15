@@ -1,0 +1,30 @@
+different between var , let and const with code examples
+
+
+1.Assignment
+let and var can be reassigned to a new value while const cannot be reassigned.
+
+var a = 10;
+a = 20;
+//output: 20
+console.log(a);
+
+let b = 'hello';
+b = 'world';
+//output: 'world'
+console.log(b);
+
+const c = 'hello'
+//Error: Uncaught TypeError: Assignment to constant variable.
+c = 'world'
+This makes const the best option for declaring values that do not change in the program, preventing reassignment.
+
+2.Scope
+var is function-scoped.
+let and const are block-scoped(any code within {} braces).
+Here is an article on Understanding Scope in Javascript.
+
+3.Hoisting
+var is always hoisted to the top of their respective scope.
+let and const is also hoisted but will throw an error if the variable is used before the declaration.
+ It is a little complicated and we will discuss it in a separate article dedicated to this specific topic.
