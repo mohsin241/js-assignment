@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-4</title>
+    <h2>Assignment-5</h2>
+</head>
+<body>
+    <script>
+       sale=parseInt(prompt("enter the no. of sales"))
+
+       
+        if (sale >= 0 && sale <= 5000)
+         {
+            console.log(`From ${sale} sale by 2% your total commission is ${sale*2/100}` )
+
+         }
+         else if(sale >= 5001 && sale <= 10000)  
+         {
+            console.log(`From ${sale} sale by 5% your total commission is ${sale*5/100}`)
+            
+        }
+        else if(sale >= 10001 && sale <=20000){
+            console.log(`From ${sale} sale by 7% your total commission is ${sale*7/100}`)
+        }
+        else if(sale >= 20001)
+        {
+            console.log(`From ${sale} sale by 10% your total commission is ${sale*10/100}`)
+        }
+        else
+        {
+         console.log("invalid")
+        }
+    </script>
+    
+</body>
+</html>
