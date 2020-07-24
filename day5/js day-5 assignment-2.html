@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-5</title>
+    <h2>Assignment-2</h2>
+</head>
+<body>
+    <script>
+class User {
+    constructor(name,age,email){
+        this.name=name
+        this.age=age
+        this.email=email
+        this.courses=[]
+    }
+    login(){
+        console.log(`${this.name} logged in`)
+    }
+    logout(){
+        console.log(`${this.name} logged  out`)
+    }
+}   
+
+class moderator extends User{
+    constructor(name,age,email,role){
+        super(name,age,email)
+        this.role=role
+        this.Coins=0
+       }
+       addCoins(){
+        this.Coins++;
+        console.log(`${this.name} has ${this.Coins} coins`);
+        return this;
+      }
+      removeCoins(){
+        this.Coins--;
+        console.log(`${this.name} has ${this.Coins} coins`);
+        return this;
+      }
+}
+
+class Admin extends moderator{
+   addCourse(user,course){
+       user.courses.push(course)
+       console.log(user)
+   }
+   deleteCourse(user,course){
+       user.courses.pop(course)
+       console.log(user)
+   }
+ 
+}
+
+
+
+
+
+
+
+
+
+let user1=new User("mohsin",21,"mgmail.com")
+user1.login()
+let mod1=new moderator("professor",35,"progmail.com","teacher")
+mod1.addCoins()
+mod1.removeCoins()
+ 
+let admin = new Admin('Rio',25,'r@gmail.com')
+admin.addCourse(user1,"hadoop")
+admin.deleteCourse(user1,"hadoop")
+
+    </script>
+    
+</body>
+</html>

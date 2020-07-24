@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-2</title>
+    <h2>Assignment-1</h2>
+</head>
+<body>
+    <script>
+ 
+ 
+ arr=[]
+ n=prompt("enter the length")
+ for(i=1;i<=n;i++){
+    
+    a=parseInt(prompt("enter the number"))
+    arr.push(a)
+    console.log(arr)
+    
+   
+ }
+ let odd=arr.filter(a=>a%2==1)
+
+ console.log(odd)
+ 
+let oddcube=arr.filter(a=>a%2==1).map(a=>a**3)
+    console.log(oddcube)
+         
+    </script>
+    
+</body>
+</html>
