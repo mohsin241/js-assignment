@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-6</title>
+    <h2>Assignment-1</h2>
+</head>
+<body>
+    
+    <lu id="list">list of colours</lu>
+   
+   
+   <script>
+        let colours= ['red','orange','yellow','blue','pink'];
+
+  const list = document.querySelector('#list');
+        console.log(colours);
+
+
+console.log(list);
+
+colours.forEach(colours=>{
+    list.innerHTML += `<li>${colours}</li>`;
+
+})
+setTimeout(()=>{
+document.body.style.backgroundColor = "red";},5000)
+
+</script>
+    
+</body>
+</html>
